@@ -1,7 +1,36 @@
+#Convert degree to radian
 import math
 
-print("Square root:", math.sqrt(25))
-print("Power:", math.pow(2, 3))
-print("Absolute:", math.fabs(-7.5))
-print("Ceil:", math.ceil(4.3))
-print("Floor:", math.floor(4.9))
+degree = 15
+radian = degree * (math.pi / 180)
+
+print("Input degree:", degree)
+print("Output radian:", round(radian, 6))
+
+#Area of a trapezoid
+height = 5
+base1 = 5
+base2 = 6
+
+area = ((base1 + base2) / 2) * height
+
+print("Expected Output:", area)
+
+#Area of a regular polygon
+import math
+
+n = 4
+s = 25
+
+area = (n * s**2) / (4 * math.tan(math.pi / n))
+
+print("The area of the polygon is:", round(area))
+
+#Area of a parallelogram
+
+base = 5
+height = 6
+
+area = base * height
+
+print("Expected Output:", float(area))

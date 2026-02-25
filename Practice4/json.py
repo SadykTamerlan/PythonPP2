@@ -1,12 +1,21 @@
 import json
 
-data = {
-    "name": "Tamerlan",
-    "age": 17,
-    "is_student": True
-}
+# Open and load JSON file
+with open("sample-data.json", "r") as file:
+    data = json.load(file)
 
-json_string = json.dumps(data)
+print("Interface Status")
+print("=" * 80)
+print(f"{'DN':50} {'Description':20} {'Speed':8} {'MTU':6}")
+print("-" * 80)
 
-print(json_string)
-print(type(json_string))
+# Loop through interfaces
+for item in data["imdata"]:
+    attributes = item["l1PhysIf"]["attributes"]
+
+    dn = attributes.get("dn", "")
+    descr = attributes.get("descr", "")
+    speed = attributes.get("speed", "")
+    mtu = attributes.get("mtu", "")
+
+    print(f"{dn:50} {descr:20} {speed:8} {mtu:6}")
