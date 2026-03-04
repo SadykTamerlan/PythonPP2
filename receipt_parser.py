@@ -3,7 +3,7 @@
 import re
 import json
 
-# Step 1: Read the receipt text from raw.txt
+# Step 1 Read the receipt text from raw.txt
 with open("raw.txt", "r", encoding="utf-8") as f:
     receipt_text = f.read()
 
