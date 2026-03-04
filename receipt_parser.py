@@ -12,7 +12,7 @@ with open("raw.txt", "r", encoding="utf-8") as f:
 prices = re.findall(r"\d+\.\d{2}", receipt_text)
 prices = [float(p) for p in prices]  # convert strings to floats
 
-# Step 3: Extract product names
+# Step 3: Extract product name
 # Assuming product name comes before the price
 # The pattern grabs letters, numbers, spaces, and stops before the price
 products_prices = re.findall(r"([A-Za-z0-9\s]+?)\s+(\d+\.\d{2})", receipt_text)
