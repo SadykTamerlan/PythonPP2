@@ -1,0 +1,26 @@
+[
+    {
+        "username": "Dias",
+        "email": "diasnmb@gmail.com",
+        "birthday": "2007-11-12",
+        "group": "work",
+        "phones": [
+            {
+                "phone": "+77714963222",
+                "type": "mobile"
+            }
+        ]
+    },
+    {
+        "username": "Rashit",
+        "email": "rashitnmb@gmail.com",
+        "birthday": "2009-07-27",
+        "group": "Family",
+        "phones": [
+            {
+                "phone": "+77785024922",
+                "type": "mobile"
+            }
+        ]
+    }
+]
